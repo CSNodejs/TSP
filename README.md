@@ -11,3 +11,5 @@ Topics covered with be dependent upon the class, but will generally cover the fo
 * Basic structures
 * Go over some of the example projects we've been working on so far
 * Resources for learning good practices in javascript
+
+This presentation built with [impress.js](https://github.com/bartaz/impress.js).
