@@ -126,3 +126,11 @@ body     { pointer-events: none; }
 .impress-not-supported .fallback-message {
     display: block;
 }
+
+/* INDIVIDUAL SLIDES */
+.gist .gist-file .gist-meta,
+pre {
+    font-size: 25px !important;
+}
+
+

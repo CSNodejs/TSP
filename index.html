@@ -24,15 +24,29 @@
 <div id="impress">
 
   <div class="step slide" data-x="-1000" data-y="-1500">
-    <p>Slide 1</p>
+    <h2>What is it?</h2>
+    <p>Node.js is javascript.</p>
+    <p>Server Side, Event Driven javascript that runs on the obscenely fast V8 engine from Google.</p>
+    <p><a href="http://code.google.com/p/v8/">http://code.google.com/p/v8/</a></p>
   </div>
 
-  <div class="step slide" data-x="0" data-y="-1500">
-    <p>Slide 2</p>
+  <div class="step slide" data-x="0" data-y="-1500" data-rotate-z="25">
+    <h2>What is it used for?</h2>
+    <p><script src="https://gist.github.com/500147.js?file=NodeServer-1.js"></script></p>
   </div>
 
-  <div class="step slide" data-x="1000" data-y="-1500">
-    <p>Slide 3</p>
+  <div class="step slide" data-x="1000" data-y="-1500" data-rotate-y="25">
+    <h2>Getting started:</h2>
+    <p>There are lots of ways to install.</p>
+    <ul>
+      <li><strong>OS X</strong>:<br>
+        <em>$ brew install node</em><sup>*</sup><br>
+        <em>$ port install node</em><sup>*</sup></li>
+      <li><strong>Linux</strong>:<br>
+       <em>$ apt-get install node</em></li>
+      <li><strong>Windows/all</strong>: <em><a href="http://nodejs.org/#download">http://nodejs.org/#download</a></em></li>
+    </ul>
+    <small><sup>*</sup> You'll need <a href="https://developer.apple.com/xcode/">Xcode</a> or this <a href="http://lb.cm/o2u">GCC Installer</a> for OS X</small>
   </div>
 
 </div>
@@ -41,7 +55,7 @@
   <p>Use a spacebar or arrow keys to navigate</p>
 </div>
 <script>
-  if ("ontouchstart" in document.documentElement) { 
+  if ("ontouchstart" in document.documentElement) {
     document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
   }
 </script>
