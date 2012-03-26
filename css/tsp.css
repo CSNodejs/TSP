@@ -133,4 +133,8 @@ pre {
     font-size: 21px !important;
 }
 
-
+.sub-slide {
+    padding: 30px;
+    background: #EEE;
+    border-radius: 13px;
+}
