@@ -80,7 +80,7 @@ body     { pointer-events: none; }
     transition:         opacity 1s,         transform 0.5s 1s;
 }
 
-.impress-on-bored .hint {
+.impress-on-step-1 .hint {
     opacity: 1;
 
     -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s;
@@ -130,7 +130,7 @@ body     { pointer-events: none; }
 /* INDIVIDUAL SLIDES */
 .gist .gist-file .gist-meta,
 pre {
-    font-size: 25px !important;
+    font-size: 21px !important;
 }
 
 
