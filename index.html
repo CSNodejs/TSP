@@ -23,20 +23,26 @@
 
 <div id="impress">
 
+  <!-- Slide 1 -->
   <div class="step slide" data-x="-1000" data-y="-1500">
-    <h2>What is it?</h2>
-    <p>Node.js is javascript.</p>
-    <p>Server Side, Event Driven javascript that runs on the obscenely fast V8 engine from Google.</p>
+    <h2><img id="logo" src="http://nodejs.org/images/logo.png" alt="node.js"> What is it?</h2>
+    <ul>
+      <li>server side</li>
+      <li>event driven<br>
+        <small>enters a main loop, waiting for an event to occur. After responding to the event, it returns to the loop and waits for the next event.</small></li>
+      <li>javascript</li>
+    </ul> ...that runs on the obscenely fast V8 engine from Google.
     <p><a href="http://code.google.com/p/v8/" target="_blank">http://code.google.com/p/v8/</a></p>
   </div>
 
+  <!-- Slide 2 -->
   <div class="step slide" data-x="0" data-y="-1500" data-rotate-z="25">
     <h2>What is it used for?</h2>
     Here's an example of a very simple http server.
     <script src="https://gist.github.com/500147.js?file=NodeServer-1.js"></script>
     But there are many more uses.
   </div>
-
+    <!-- Slide 2.1 -->
     <div class="step slide sub-slide" data-x="0" data-y="-1500" data-rotate-y="90">
       <ul>
         <li>Static file servers</li>
@@ -46,6 +52,7 @@
       </ul>
     </div>
 
+  <!-- Slide 3 -->
   <div class="step slide" data-x="1000" data-y="-1500" data-rotate-y="25">
     <h2>Getting started:</h2>
     <p>There are lots of ways to install.</p>
@@ -60,18 +67,39 @@
     <small><sup>*</sup> You'll need <a href="https://developer.apple.com/xcode/" target="_blank">Xcode</a> or this <a href="http://lb.cm/o2u" target="_blank">GCC Installer</a> for OS X</small>
   </div>
 
-  <div class="step slide" data-x="2000" data-y="-1500" data-rotate-z="90">
-    <h2>NVM: <a href="https://github.com/creationix/nvm" target="_blank">Node Version Manager</a></h2>
+  <!-- Slide 4 -->
+  <div class="step slide" data-x="2000" data-y="-1500" data-rotate-z="115">
+    <h2>NVM: <small><a href="https://github.com/creationix/nvm" target="_blank">Node Version Manager</a></small></h2>
     <p>Node Version Manager is a tool for switching between releases of node. This is useful for testing your code before deployment, or testing your open source code against different versions of node. There have been API changes lately so it’s worth having a sanity check against major releases.</p>
   </div>
-
-    <div class="step slide sub-slide" data-x="2000" data-y="-1500" data-rotate-y="90">
+    <!-- Slide 4.1 -->
+    <div class="step slide sub-slide" data-x="2000" data-y="-1500" data-rotate-z="90" data-rotate-x="-90">
       <h2>NVM: Usage</h2>
       <ul>
         <li><strong>Install</strong>:<br>
           <em>$ nvm install v0.6.12</em></li>
         <li><strong>Use</strong>:<br>
           <em>$ nvm use v0.6.12</em></li>
+      </ul>
+    </div>
+
+  <!-- Slide 5 -->
+  <div class="step slide" data-x="3000" data-y="-1500" data-rotate-z="25">
+    <h2>NPM: <small><a href="http://npmjs.org/" target="_blank">Node Package Manager</a></small></h2>
+    <h3 class="npm-logo">NPM</h3>
+    <p>This is a package manager that many people add to in order to make it very simple to install their code.</p>
+  </div>
+    <!-- Slide 5.1 -->
+    <div class="step fade sub-slide" data-x="3000" data-y="-1500" data-rotate-y="90">
+      <h2>NPM: Usage</h2>
+      <ul>
+        <li><strong>Install</strong>:<br>
+          <em>$ curl http://npmjs.org/install.sh | sh </em></li>
+        <li><strong>Use</strong>:<br>
+          <em>$ npm install socket.io</em><br>
+          <small><em>(installs in ./node_modules)</em> OR</small><br>
+          <em>$ sudo npm install -g socket.io</em><br>
+          <small><em>(installs globally, typically in ~/node_modules)</em></small></li>
       </ul>
     </div>
 
