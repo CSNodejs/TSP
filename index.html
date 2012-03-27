@@ -29,7 +29,7 @@
     <ul>
       <li>server side</li>
       <li>event driven<br>
-        <small>enters a main loop, waiting for an event to occur. After responding to the event, it returns to the loop and waits for the next event.</small></li>
+        <small><em>(enters a main loop, waiting for an event to occur and after responding to the event, returns to the loop and waits for the next event)</em></small></li>
       <li>javascript</li>
     </ul> ...that runs on the obscenely fast V8 engine from Google.
     <p><a href="http://code.google.com/p/v8/" target="_blank">http://code.google.com/p/v8/</a></p>
@@ -90,11 +90,12 @@
     <p>This is a package manager that many people add to in order to make it very simple to install their code.</p>
   </div>
     <!-- Slide 5.1 -->
-    <div class="step fade sub-slide" data-x="3000" data-y="-1500" data-rotate-y="90">
+    <div class="step slide sub-slide" data-x="3000" data-y="-1500" data-rotate-y="90">
       <h2>NPM: Usage</h2>
       <ul>
         <li><strong>Install</strong>:<br>
-          <em>$ curl http://npmjs.org/install.sh | sh </em></li>
+          <em>$ curl http://npmjs.org/install.sh | sh </em>
+          <small><em>(included by default with Node.JS, since v0.6.3)</em></small></li>
         <li><strong>Use</strong>:<br>
           <em>$ npm install socket.io</em><br>
           <small><em>(installs in ./node_modules)</em> OR</small><br>
@@ -102,6 +103,11 @@
           <small><em>(installs globally, typically in ~/node_modules)</em></small></li>
       </ul>
     </div>
+
+  <!-- Finis -->
+  <div id="finis" class="step slide">
+    <h1>Finis</h1>
+  </div>
 
 </div>
 
@@ -114,6 +120,8 @@
   }
 </script>
 
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/tsp.js"></script>
 <script src="js/impress.js"></script>
 <script>impress().init();</script>
 
